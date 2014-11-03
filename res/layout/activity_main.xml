@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" ads:adUnitId="@string/UNIT_ID" ads:adSize="BANNER" >
+    </com.google.android.gms.ads.AdView>
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_button"
+        android:clickable="true" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+            
+            <RadioGroup android:id="@+id/buttonGroup" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/soundA"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" 
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/soundB"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="2"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundC"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="3"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundD"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="4"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundE"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundF"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="6"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundG"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="7"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundCartoon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="8"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundGuy"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="9"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <RadioButton
+                android:id="@+id/soundManAndWoman"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/check_state"
+                android:button="@null"
+                android:text="10"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
